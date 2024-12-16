@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>LOST WORLD WIKI</h1>
+        <input type="text" id="searchbar" class="searchbar" placeholder="Search..." title="Type in a category" autocomplete="off">
+        <div id="searchtext">
+
+        </div>
+        <select id="color"></select>
+    </div>
+    <div class="notnav">
+        <div class="box-full" id="NameContainer">
+            <h1 id="Name"></h1>
+        </div>
+        <div style="width:95%; margin:auto">
+            <div class="text-right">
+                <t id="Desc"></t>
+            </div>
+            <div class="info-left">
+                <img id="Image" width="80%">
+            </div>
+            <table id="Factioninfotable">
+                <tr>
+                    <td id="Place" ><strong>Notable Place/s</strong><br></td>
+                    <td id="Person" ><strong>Notable Person/s</strong><br></td>
+                    <td id="Event" ><strong>Notable Event/s</strong><br></td>
+                </tr>
+            </table>
+            <table id="Factionrewardtable">
+                <tr>
+                    <td>Favour</td>
+                    <td>Title</td>
+                    <td>Privileges</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>

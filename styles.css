@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    overflow-y: hidden;
+    font-family: raleway;
+}
+
+body {
+    background-color: var(--main)
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--contrast);
+}
+
+.navbar {
+    width: 15%;
+    background: var(--contrast);
+    height: 100%;
+    overflow-y: hidden;
+    float: left
+}
+
+.navbar input {
+    background: var(--side);
+    color: var(--text);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar select {
+    bottom: 0;
+    position: fixed;
+    padding: 8px;
+    margin: auto 8px 8px;
+    left: 0;
+    width: 14%;
+    color: var(--text);
+    background: var(--dark)
+}
+
+.navbar select:hover {
+    box-shadow: 4px 4px var(--bright)
+}
+
+.navbar a {
+    text-align: center;
+    color: var(--text);
+    padding: 12px;
+    text-decoration: none;
+    display: none
+}
+
+.navbar a:hover {
+    background: var(--dark)
+}
+
+.navbar ::placeholder {
+    color: var(--text);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar input:focus {
+    outline: none;
+}
+
+.navbar h1 {
+    font-size: 48px;
+    text-align: center;
+    padding: 16px 0px;
+    color: var(--text);
+}
+
+.searchbar {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+}
+
+.notnav {
+    width: 85%;
+    height: 100%;
+    float: right;
+    overflow-y: scroll;
+}
+
+.box-full {
+    width: 95%;
+    margin: auto;
+    background: var(--dark);
+    box-shadow: 4px 4px var(--bright);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    text-align: center;
+    color: var(--text);
+}
+
+.box-full h1 {
+    font-size: 64px;
+}
+
+.box-full table {
+    width: 100%;
+    color: var(--text);
+    text-align: center;
+    table-layout: fixed;
+}
+
+.box-full td {
+    border: var(--contrast);
+    border-style: solid;
+    padding: 8px
+}
+
+.box-full th {
+    border: var(--contrast);
+    border-style: solid;
+    padding: 8px
+}
+
+.image-full {
+    width: 95%;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-full img {
+    box-shadow: 4px 4px var(--bright);
+    margin: 8px
+}
+
+.text-right {
+    width: 74%;
+    float: right;
+    margin-right: 4px;
+    background: var(--dark);
+    box-shadow: 4px 4px var(--bright);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    padding: 16px;
+    text-align: center;
+    color: var(--text);
+}
+
+.text-right button {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    background: var(--contrast);
+    color: var(--text)
+}
+
+.text-right button:hover {
+    box-shadow: 4px 4px var(--bright)
+}
+
+.active {
+    background: var(--contrast) !important;
+    box-shadow: inset 4px 4px var(--bright) !important;
+}
+
+.inactive {
+    background: var(--bright) !important;
+    box-shadow: 0px 0px white !important;
+}
+
+.info-left {
+    width: 21%;
+    float: left;
+    margin: auto;
+    background: var(--dark);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    text-align: center;
+    color: var(--text);
+    font-weight: bold;
+    box-shadow: 4px 4px var(--bright);
+    overflow-x: hidden
+}
+
+@media screen and (max-width: 1600px) {
+  .text-right, .table-right {
+    width: 70%;
+  }
+  .info-left {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .text-right, .table-right {
+    width: 60%;
+  }
+  .info-left {
+    width: 21%;
+  }
+}
+
+.info-left p {
+    font-size: 18px;
+    padding: 4px
+}
+
+#Listtable {
+    width: 95%;
+    border-spacing: 8px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Listtable td {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	color: var(--text);
+	font-size: 24px;
+	line-height: 192px;
+	background-size: cover;
+	background-position: center;
+}
+
+#Listtable td:hover {
+    box-shadow: 4px 4px var(--contrast);
+}
+
+#Listtable th {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	font-weight: bold;
+	color: var(--text);
+	font-size: 32px
+}
+
+#Listtable tr {
+	line-height: 64px;
+}
+
+.text-right a, .info-left a, #Factioninfotable td a {
+    color: var(--text)
+}
+
+.text-right a:hover, .info-left a:hover,#Factioninfotable td a:hover {
+    color: var(--contrast);
+    font-weight: bold
+}
+
+#Factionrewardtable {
+    width: 95%;
+    border-spacing: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Factionrewardtable td {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	color: var(--text);
+	font-size: 24px;
+	line-height: 48px;
+	background-size: cover;
+	background-position: center;
+	font-weight: bold
+}
+
+#Factionrewardtable th {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	color: var(--text);
+	font-size: 24px;
+	line-height: 32px;
+	background-size: cover;
+	background-position: center;
+	font-weight: normal
+}
+
+#Factioninfotable {
+    width: 95%;
+    border-spacing: 8px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Factioninfotable td {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	color: var(--text);
+	font-size: 24px;
+	padding: 16px;
+	background-size: cover;
+	background-position: center;
+}
+
+#Hometable {
+    width: 95%;
+    border-spacing: 8px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Hometable td {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	color: var(--text);
+	font-size: 24px;
+	line-height: 192px;
+	background-size: cover;
+	background-position: center;
+}
+
+#Hometable td:hover {
+    box-shadow: 4px 4px var(--contrast);
+}
+
+#Hometable th {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	font-weight: bold;
+	color: var(--text);
+	font-size: 32px
+}
+
+#Hometable tr {
+	line-height: 64px;
+}
+
+.invisible {
+    visibility: hidden
+}
+
+#Racetable {
+    width: 76%;
+    border-spacing: 8px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    float: right
+}
+
+#Racetable td {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	color: var(--text);
+	padding: 16px;
+	background-size: cover;
+	background-position: center;
+}
+
+#Classtable {
+    width: 95%;
+    border-spacing: 8px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Classtable td {
+	background: var(--dark);
+	box-shadow: 4px 4px var(--bright);
+	text-align: center;
+	color: var(--text);
+	padding: 16px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
