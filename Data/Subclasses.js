@@ -42,4 +42,15 @@ export const Subclasses = [
             },
         ]
     },
+    {
+        "Name" : "Metamagic",
+        "Class" : "Sorcerer",
+        "Extras" : [
+            {
+                "Name" : "Delayed Spell",
+                "PreReq" : "N/a",
+                "Desc" : "<i>Cost: 1 Sorcery Point</i><br>When You cast a Spell You can Expend One Sorcery Point for the Spell To take effect at the start of your next turn. It will affect the Target chosen or in the space chosen. if the Spell requires concentration then you must begin concentrating when you expend the spell slot on this turn but the Time does not begin"
+            },
+        ]
+    },
 ]
