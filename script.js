@@ -24,6 +24,12 @@ const Pages = ["Home", "Cities", "People", "Items", "Events", "Places", "Spells"
 //Import
 
 function Start() {
+    let headTitle = document.querySelector('head');
+    let setFavicon = document.createElement('link');
+    setFavicon.setAttribute('rel','shortcut icon');
+    setFavicon.setAttribute('href', "favicon.ico");
+    headTitle.appendChild(setFavicon);
+	
     var url = window.location.pathname
     var lastPart = url.split("/").pop();
     var elements = document.getElementsByTagName("option"),
