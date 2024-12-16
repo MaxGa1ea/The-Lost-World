@@ -184,7 +184,7 @@ function Start() {
                     IdGet(Info[b]).innerHTML = Info[b] + ": " + Spells[a][Info[b]]
                 }
 	        if (Spells[a]["Level"] == "10") {
-			IdGet("Excess Magic").textContent = Spells[a]["Excess Magic"]
+			IdGet("Excess Magic").textContent = "Excess Magic: " + Spells[a]["Excess Magic"]
 		}
                 IdGet("Name").textContent = Spells[a]["Name"]
                 IdGet("Desc").innerHTML = "<br>" + Spells[a]["Desc"] + "<br>"
