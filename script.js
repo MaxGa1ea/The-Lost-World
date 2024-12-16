@@ -183,6 +183,9 @@ function Start() {
                 for (let b = 0; b < Info.length; b++) {
                     IdGet(Info[b]).innerHTML = Info[b] + ": " + Spells[a][Info[b]]
                 }
+	        if (Info[0] == "10") {
+			IdGet("Excess Magic").textContent = Spells[a]["Excess Magic"]
+		}
                 IdGet("Name").textContent = Spells[a]["Name"]
                 IdGet("Desc").innerHTML = "<br>" + Spells[a]["Desc"] + "<br>"
                 if (Spells[a]["Damage"]) {
@@ -217,7 +220,7 @@ function Start() {
             }
         }
     } else if (lastPart == "spellslist.html") {
-        let Sizes = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        let Sizes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10]
         let SortedSpell = {
             "1" : [],
             "2" : [],
@@ -228,6 +231,7 @@ function Start() {
             "7" : [],
             "8" : [],
             "9" : [],
+	    "10" : [],
         }
         let DamageColour = {
             "Bludgeoning" : "#d6d6d6",
