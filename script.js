@@ -183,7 +183,7 @@ function Start() {
                 for (let b = 0; b < Info.length; b++) {
                     IdGet(Info[b]).innerHTML = Info[b] + ": " + Spells[a][Info[b]]
                 }
-	        if (Info[0] == "10") {
+	        if (Spells[a]["Level"] == "10") {
 			IdGet("Excess Magic").textContent = Spells[a]["Excess Magic"]
 		}
                 IdGet("Name").textContent = Spells[a]["Name"]
