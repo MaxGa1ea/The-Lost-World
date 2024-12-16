@@ -45,7 +45,7 @@ function Start() {
         text.id = "text" + (a+1)
         SearchParent.appendChild(text)
     }
-    if (lastPart == "index.html") {
+    if (lastPart == "index.html" || lastPart == "") {
         let IdList = Array.from(Pages)
         IdList.shift()
         for (let a = 0; a < IdList.length; a++) {
