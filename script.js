@@ -476,25 +476,37 @@ function Start() {
             "Warlock" : "#7B469B",
             "Wizard" : "#2A50A1"
         }
-        for (let a = 0; a < Races.length; a++) {
+        for (let a = 0; a < Subclasses.length; a++) {
             if (Subclasses[a]["Name"] == decodeURI(hash)) {
                 IdGet("Name").textContent = Subclasses[a]["Name"]
                 IdGet("Titlebox").style.background = ClassColours[Subclasses[a]["Class"]]
-                IdGet("Image").src = Subclasses[a]["Image"]
-                IdGet("Desc").innerHTML = Subclasses[a]["Desc"]
                 let Table = IdGet("Classtable")
-                for (let b = 0; b < Subclasses[a]["Features"].length; b++) {
-                    let Line = document.createElement("tr")
-                    Table.appendChild(Line)
-                    let Column = document.createElement("td")
-                    Column.innerHTML = "<h2>" + Subclasses[a]["Features"][b]["Name"] + "</h2><h3>Level " + Subclasses[a]["Features"][b]["Level"] + "</h3><t>" + Subclasses[a]["Features"][b]["Desc"] + "</p>"
-                    Table.appendChild(Column)
+                if (Subclasses[a]["Features"]) {
+                    IdGet("Image").src = Subclasses[a]["Image"]
+                    IdGet("Desc").innerHTML = Subclasses[a]["Desc"]
+                    for (let b = 0; b < Subclasses[a]["Features"].length; b++) {
+                        let Line = document.createElement("tr")
+                        Table.appendChild(Line)
+                        let Column = document.createElement("td")
+                        Column.innerHTML = "<h2>" + Subclasses[a]["Features"][b]["Name"] + "</h2><h3>Level " + Subclasses[a]["Features"][b]["Level"] + "</h3><t>" + Subclasses[a]["Features"][b]["Desc"] + "</p>"
+                        Table.appendChild(Column)
+                    }
+                } else if (Subclasses[a]["Extras"]) {
+                    IdGet("Desc").parentNode.style.display = "none"
+                    for (let b = 0; b < Subclasses[a]["Extras"].length; b++) {
+                        let Line = document.createElement("tr")
+                        Table.appendChild(Line)
+                        let Column = document.createElement("td")
+                        Column.innerHTML = "<h2>" + Subclasses[a]["Extras"][b]["Name"] + "</h2><h3>Prerequisites " + Subclasses[a]["Extras"][b]["PreReq"] + "</h3><t>" + Subclasses[a]["Extras"][b]["Desc"] + "</t>"
+                        Table.appendChild(Column)
+                    }
                 }
             }
         }
     } else if (lastPart == "subclasseslist.html") {
-        let Sizes = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
+        let Sizes = ["Extras", "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
         let SortedClass = {
+            "Extras" : [],
             "Barbarian" : [],
             "Bard" : [],
             "Cleric" : [],
@@ -523,7 +535,11 @@ function Start() {
             "Wizard" : "#2A50A1"
         }
         for (let a = 0; a < Subclasses.length; a++) {
-            SortedClass[Subclasses[a]["Class"]].push(Subclasses[a]["Name"])
+            if (Subclasses[a]["Extras"]) {
+                SortedClass["Extras"].push(Subclasses[a]["Name"])
+            } else {
+                SortedClass[Subclasses[a]["Class"]].push(Subclasses[a]["Name"])
+            }
         }
         let mainParent = IdGet("ListTable")
         for (let a = 0; a < Sizes.length; a++) {
@@ -542,7 +558,7 @@ function Start() {
                         if (SortedClass[Sizes[a]][d]) {
                             let square = document.createElement("td")
                             square.textContent = SortedClass[Sizes[a]][d]
-                            for (let e = 0; e < Spells.length; e++) {
+                            for (let e = 0; e < Subclasses.length; e++) {
                                 if (Subclasses[e]["Name"] == SortedClass[Sizes[a]][d]) {
                                     square.style.background = ClassColours[Subclasses[e]["Class"]]
                                     let Link = SearchIterate(Subclasses[e]["Name"])
