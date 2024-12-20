@@ -56,5 +56,13 @@ export const Color = [
         "Bright" : "#ff073a",
         "Contrast" : "#008080",
         "Text" : "white",
-    }
+    },
+    {
+        "Name" : "Roman",
+        "Main" : "#E0FFFF",
+        "Dark" : "#3CB371",
+        "Bright" : "#BA55D3",
+        "Contrast" : "#191970",
+        "Text" : "white",
+    },
 ]
