@@ -48,5 +48,13 @@ export const Color = [
         "Bright" : "#FF7F50",
         "Contrast" : "#8B0000",
         "Text" : "white",
+    },
+    {
+        "Name" : "Archie",
+        "Main" : "#fd5e53",
+        "Dark" : "#FF69B4",
+        "Bright" : "#ff073a",
+        "Contrast" : "#008080",
+        "Text" : "white",
     }
 ]
