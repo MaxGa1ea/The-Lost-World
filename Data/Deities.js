@@ -6,6 +6,6 @@ export const Deities = [
         "Level" : "Intermediate Deity",
         "Title" : "The One with the Steel Fist",
         "Patron of" : "The Forge, Smiths",
-        "Domains" : "Forge"
+        "Domain / Patronage" : "Forge"
     },
 ]

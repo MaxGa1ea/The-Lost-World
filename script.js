@@ -741,7 +741,7 @@ function Start() {
         const hash = (window.location.hash).replace("#", "")
         for (let a = 0; a < Deities.length; a++) {
             if (Deities[a]["Name"] == decodeURI(hash)) {
-                const Info = ["Level", "Title", "Patron of", "Domains"]
+                const Info = ["Level", "Title", "Patron of", "Domain / Patronage"]
                 for (let b = 0; b < Info.length; b++) {
                     IdGet(Info[b]).innerHTML = Info[b] + ": " + Deities[a][Info[b]]
                 }
