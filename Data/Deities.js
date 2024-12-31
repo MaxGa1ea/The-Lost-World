@@ -1,3 +1,11 @@
+/*
+Birth Methods
+1. Belief
+2. Birth
+3. Demigod
+4. Ascendance
+*/
+
 export const Deities = [
     {
         "Name" : "Orcham",
@@ -6,6 +14,8 @@ export const Deities = [
         "Level" : "Intermediate Deity",
         "Title" : "The One with the Steel Fist",
         "Patron of" : "The Forge, Smiths",
-        "Domain / Patronage" : "Forge"
+        "Domain / Patronage" : "Forge",
+        "Birth Method" : "Birth (Goddess of Fire / God of Craftsmanship)",
+        "Gift" : "Gain Proficiency with Smith's Tools",
     },
 ]
