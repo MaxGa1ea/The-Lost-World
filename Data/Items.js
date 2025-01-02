@@ -35,4 +35,17 @@ export const Items = [
         "Cost" : "45 - 60 GP",
         "Magicality" : "Yes",
     },
+    {
+        "Name" : "Gilded Raven",
+        "Image" : "Images/Items/Wondrous Items/Gilded Raven.png",
+        "Desc" : "These Ornatly Carved Figurines of Ravens hold the magical power to bemoce raven in order to send messages. The Figurine has 3 charges and regains 1d3 expended charges at dawn. You can Expend one Charge to Cast Animal Messenger, With the Figure becoming a raven that is the target of the Spell",
+        "Rarity" : "Uncommon",
+        "First Made" : "Unknown",
+        "Last Made" : "N/A",
+        "Creation Location" : "Unknown",
+        "Type" : "Wondrous Item",
+        "Amount Made" : "In Production",
+        "Cost" : "100 - 500 GP",
+        "Magicality" : "Yes",
+    }
 ]
