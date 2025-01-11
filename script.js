@@ -696,13 +696,15 @@ function Start() {
             }
         }
     } else if (lastPart == "materialslist.html") {
-        let Sizes = ["Ore", "Rock", "Wood", "Hide", "Fiber"]
+        let Sizes = ["Ore", "Rock", "Wood", "Hide", "Fiber", "Food", "Plant"]
         let SortedMats = {
             "Ore" : [],
             "Rock" : [],
             "Wood" : [],
             "Hide" : [],
             "Fiber" : [],
+            "Food" : [],
+            "Plant" : [],
         }
         for (let a = 0; a < Materials.length; a++) {
             SortedMats[Materials[a]["Type"]].push(Materials[a]["Name"])
