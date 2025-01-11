@@ -136,6 +136,25 @@ body {
     padding: 8px
 }
 
+#Classtable td t table {
+    width: 100%;
+    color: var(--text);
+    text-align: center;
+    table-layout: fixed;
+}
+
+#Classtable td t table td {
+    border: var(--contrast);
+    border-style: solid;
+    padding: 8px
+}
+
+#Classtable td t table th {
+    border: var(--contrast);
+    border-style: solid;
+    padding: 8px
+}
+
 .image-full {
     width: 95%;
     margin: auto;

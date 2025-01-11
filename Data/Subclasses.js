@@ -53,4 +53,43 @@ export const Subclasses = [
             },
         ]
     },
+    {
+        "Name" : "Stone Sorcery",
+        "Image" : "Images/Subclasses/Sorcerer/Stone Sorcery.png",
+        "Desc" : "Stone Sorcerers are Defensive, Melee Focus Sorcerers who do well in the heat of battle",
+        "Class" : "Sorcerer",
+        "Restriction" : "N/A",
+        "Features" : [
+            {
+                "Name" : "Stone's Durability",
+                "Level" : "3",
+                "Desc" : "Your hit point maximum increases by 3, and increase by one for each level you gain in this class a primal earth magic increases your resilience. You skin also hardens, granting you an AC of 10 + Your Constitution Modifier + Your Charisma Modifier."
+            },
+            {
+                "Name" : "Protector",
+                "Level" : "3",
+                "Desc" : "You gain proficiency with shields and both Simple and Martial Weapons"
+            },
+            {
+                "Name" : "Stone Spells",
+                "Level" : "3",
+                "Desc" : "The primal earthen magic flowing through you allow you access to an additional array of spells. These spells are always prepared and count as sorcerer spells for you.<br><br><table><tr><th>Sorcerer Level</th><th>Spell</th></tr><tr><td>3</td><td>Earth Tremor, Catapult, Earthbind, Maximilian's earthen grasp</td></tr><tr><td>5</td><td>Erupting earth, Meld into stone</td></tr><tr><td>7</td><td>Conjure Minor Elementals, Summon Elemental</td></tr><tr><td>9</td><td>Wall of stone, Conjure elemental</td></tr></table>"
+            },
+            {
+                "Name" : "Stone Aegis",
+                "Level" : "6",
+                "Desc" : "You can use primal stone magic to strengthen your allies. As a bonus action you can strengthen the defenses of yourself of an ally within 30ft/9m, setting their AC to 10+your charisma Modifier if they are not wearing armour and if their AC is not already higher. Any attempt to push them is reduced by 10ft/3m and they can use a reaction to reduce any damage by your Charisma Modifier.<br><br>This ends after one Minute or when you Use it again. You can use this ability Twice per long rest, and you gain an additional use at 10th and 18th level. You can also expend a spell slot of any level to regain a charge."
+            },
+            {
+                "Name" : "Stoneborn",
+                "Level" : "14",
+                "Desc" : "You gain Resistance to Bludgeoning Damage and a 60ft/18m Burrow Speed, Channeling the Earth around you as you Do It. You also Gain Tremorsense of 30ft/9m"
+            },
+            {
+                "Name" : "Master of the Earth",
+                "Level" : "18",
+                "Desc" : "When you use your Stone Aegis ability you can target up to you Charisma Modifier in creatures. Additionally you gain Immunity to Bludgeoning Damage"
+            },
+        ]
+    },
 ]
